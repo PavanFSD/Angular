@@ -9,4 +9,6 @@ export class AppComponent {
   title = 'HelloWorld';
   name:String = "pavan";
   isdisabled : boolean = false;
+  isActive:boolean=true;
+  isapplyBG:boolean=true;
 }
