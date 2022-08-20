@@ -11,4 +11,5 @@ export class AppComponent {
   isdisabled : boolean = false;
   isActive:boolean=true;
   isapplyBG:boolean=true;
+  activeClass:String='active';
 }
