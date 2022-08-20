@@ -1,5 +1,7 @@
 <!-- <app-student></app-student> -->
+<button (click)="increment()">increment</button>
+<button (click)="decrement()">decrement</button>
 
-
-<h2 [style]='{color:apply_color}'>Hi i am class binding example</h2>
-<h6 [style.color]='apply_color'>hi iam h6</h6>
+name<input type="text" (input)="changeName($event)">
+<h1>{{x}}</h1>
+<h2>you have entered {{name}}</h2>
