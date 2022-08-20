@@ -5,11 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+// AppComponent.ts
 export class AppComponent {
   title = 'HelloWorld';
-  name:String = "pavan";
-  isdisabled : boolean = false;
-  isActive:boolean=true;
-  isapplyBG:boolean=true;
-  activeClass:String='active';
+  apply_color:String = "red";
+  
 }

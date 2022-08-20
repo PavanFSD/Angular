@@ -1,16 +1,5 @@
-<h1 class="">Hello{{name}}, welcome to angular application</h1>
-<app-student></app-student>
+<!-- <app-student></app-student> -->
 
-<input type="button" value="im button" [disabled]="isdisabled ">
-<!--one way of data binding -->
-<!-- class binding -->
 
-<h2 [class]='activeClass'>Hi i am class binding example</h2>
-<h1 [class]="isActive?'active':'nonactive'">class binding</h1>
-
-<!-- data binding using multiple conditions, here if all conditions are true, then only the properties will be applied. here if isActive value is 
-true and isapplyBG also has true then those properties are assigned -->
-<h1 [class]="{active:isActive,apply:isapplyBG}">class binding on multiple conditions</h1>
-
-<!-- we can give it array also -->
-<h1 [class]="['active','apply']">class binding on multiple conditions using array</h1>
+<h2 [style]='{color:apply_color}'>Hi i am class binding example</h2>
+<h6 [style.color]='apply_color'>hi iam h6</h6>
