@@ -1,43 +1,8 @@
-<!-- data = ["hyd","bnglr","chennai"]
-
- emp_data = [
-  {"name":"Ram", "email":"ram@gmail.com", "age":23},
-  {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},
-  {"name":"John", "email":"john@gmail.com", "age":33},
-  {"name":"Bob", "email":"bob32@gmail.com", "age":41}
-  ] -->
-<p *ngFor="let n of data">{{n}}</p>
-
-<table border="2px solid">
-    <tr *ngFor="let m of data">
-        <td>{{m}}</td> 
-    </tr>
-</table>
-
-<table border="5px solid red">
-    <tr>
-        <th>Name</th>
-        <th>email</th>
-        <th>age</th>
-       
-    </tr>
-    <tr *ngFor="let emp of emp_data">
-        <td>{{emp.name}}</td>
-        <td>{{emp.email}}</td>
-        <td>{{emp.age}}</td>
-    </tr>
-</table>
-
-
-<table border="5px solid red">
-    <tr>
-        <th>Name</th>
-        <th>email</th>
-        <th>age</th>
-       
-    </tr>
-    <tr *ngFor="let emp of emp_data;first as f">
-        {{f}}
-    </tr>
-</table>
-
+<div [ngSwitch]="operation">
+    <div *ngSwitchCase="'+'">i am addition</div>
+    <div *ngSwitchCase="'-'">i am sub</div>
+    <div *ngSwitchCase="'*'">i am multiplication</div>
+    <div *ngSwitchCase="'/'">i am divison</div>
+    <div *ngSwitchDefult>i am defult</div>
+</div>
+<!-- operation:String = "/"; -->
