@@ -1,4 +1,26 @@
 <!-- <app-student></app-student> -->
 
-name<input type="text" [(ngModel)]="city">
-<h2>you have entered {{city}}</h2>
+<!-- ngif example -->
+<h1 *ngIf="!data">if data value is there then it will display, if value is 0 or "" then if condition treated as false</h1>
+
+<!-- ngif else example -- here data is ['a','b','b']>
+<h1 *ngIf="data else sample">loading...</h1>
+
+<ng-template #sample>
+    {{data}}
+</ng-template>
+
+<!-- ngIf then and else example -->
+<h1 *ngIf="data then b1 else b2"></h1>
+
+
+<ng-template #b1>
+    <h1>b1</h1>
+    {{data}}
+</ng-template>
+
+
+<ng-template #b2>
+    <h2>b2</h2>
+    >loading...
+</ng-template>

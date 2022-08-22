@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 // AppComponent.ts
 export class AppComponent {
- city:String = "hyd";
+data = ["hyd","bnglr","chennai"]
 }
