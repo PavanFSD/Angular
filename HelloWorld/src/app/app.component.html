@@ -1,26 +1,43 @@
-<!-- <app-student></app-student> -->
+<!-- data = ["hyd","bnglr","chennai"]
 
-<!-- ngif example -->
-<h1 *ngIf="!data">if data value is there then it will display, if value is 0 or "" then if condition treated as false</h1>
+ emp_data = [
+  {"name":"Ram", "email":"ram@gmail.com", "age":23},
+  {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},
+  {"name":"John", "email":"john@gmail.com", "age":33},
+  {"name":"Bob", "email":"bob32@gmail.com", "age":41}
+  ] -->
+<p *ngFor="let n of data">{{n}}</p>
 
-<!-- ngif else example -- here data is ['a','b','b']>
-<h1 *ngIf="data else sample">loading...</h1>
+<table border="2px solid">
+    <tr *ngFor="let m of data">
+        <td>{{m}}</td> 
+    </tr>
+</table>
 
-<ng-template #sample>
-    {{data}}
-</ng-template>
+<table border="5px solid red">
+    <tr>
+        <th>Name</th>
+        <th>email</th>
+        <th>age</th>
+       
+    </tr>
+    <tr *ngFor="let emp of emp_data">
+        <td>{{emp.name}}</td>
+        <td>{{emp.email}}</td>
+        <td>{{emp.age}}</td>
+    </tr>
+</table>
 
-<!-- ngIf then and else example -->
-<h1 *ngIf="data then b1 else b2"></h1>
 
+<table border="5px solid red">
+    <tr>
+        <th>Name</th>
+        <th>email</th>
+        <th>age</th>
+       
+    </tr>
+    <tr *ngFor="let emp of emp_data;first as f">
+        {{f}}
+    </tr>
+</table>
 
-<ng-template #b1>
-    <h1>b1</h1>
-    {{data}}
-</ng-template>
-
-
-<ng-template #b2>
-    <h2>b2</h2>
-    >loading...
-</ng-template>
