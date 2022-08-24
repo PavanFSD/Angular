@@ -8,6 +8,18 @@ import { Component } from '@angular/core';
 // AppComponent.ts
 export class AppComponent {
 
-  operation:String = "/";
+  name = "pavan"
+  lastname = "PATIL"
+  title = "hi hello"
+  amout = 2000;
+  date_today:any = new Date();
+  person = {
+    name:"pavan",
+    gender:"male"
+  }
+  percent = 0.98;
+  company = "microsoft";
+
+
   
 }

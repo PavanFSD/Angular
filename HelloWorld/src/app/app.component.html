@@ -1,8 +1,20 @@
-<div [ngSwitch]="operation">
-    <div *ngSwitchCase="'+'">i am addition</div>
-    <div *ngSwitchCase="'-'">i am sub</div>
-    <div *ngSwitchCase="'*'">i am multiplication</div>
-    <div *ngSwitchCase="'/'">i am divison</div>
-    <div *ngSwitchDefult>i am defult</div>
-</div>
-<!-- operation:String = "/"; -->
+<!-- name = "pavan"
+  lastname = "PATIL"
+  title = "hi hello"
+  amout = 2000;
+  date_today = new Date();
+  person = {
+    name:"pavan",
+    gender:"male"
+  }
+  percent = 0.98;
+  company = "microsoft"; -->
+
+  <h1>name {{name | uppercase}}</h1>
+  <h1>lastname  {{lastname | lowercase }}</h1>
+  <!-- <h1>title {{title | title }}</h1> -->
+  <h1>amout {{amout | currency }}</h1>
+  <h1>date {{date_today |  date: 'dd/MM/yyyy'}}</h1>
+  <h1>person {{person | json}}</h1>
+  <h1>percent {{percent | percent }}</h1>
+  <h1>company {{company | slice:0:4 }}</h1>
