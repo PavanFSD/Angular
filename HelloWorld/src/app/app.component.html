@@ -1,20 +1,3 @@
-<!-- name = "pavan"
-  lastname = "PATIL"
-  title = "hi hello"
-  amout = 2000;
-  date_today = new Date();
-  person = {
-    name:"pavan",
-    gender:"male"
-  }
-  percent = 0.98;
-  company = "microsoft"; -->
+<!-- here amout is multiplied with 200 with custom pipe -->
+<h1>{{amount | test : 200}}</h1>
 
-  <h1>name {{name | uppercase}}</h1>
-  <h1>lastname  {{lastname | lowercase }}</h1>
-  <!-- <h1>title {{title | title }}</h1> -->
-  <h1>amout {{amout | currency }}</h1>
-  <h1>date {{date_today |  date: 'dd/MM/yyyy'}}</h1>
-  <h1>person {{person | json}}</h1>
-  <h1>percent {{percent | percent }}</h1>
-  <h1>company {{company | slice:0:4 }}</h1>
