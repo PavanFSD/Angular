@@ -9,8 +9,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   
-  amount = 2000;
-  
+  value:any = "hey"
+
+  printValue(e:any){
+    this.value = e.id;
+    console.log(e.id);
+  }
 
 
   
