@@ -8,13 +8,7 @@ import { Component } from '@angular/core';
 // AppComponent.ts
 export class AppComponent {
 
-  
-  value:any = "hey"
-
-  printValue(e:any){
-    this.value = e.id;
-    console.log(e.id);
-  }
+  name:String = "parent";
 
 
   
